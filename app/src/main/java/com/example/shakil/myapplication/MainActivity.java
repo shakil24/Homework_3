@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText name,email,age,country,education;
@@ -41,6 +42,11 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("Country",countrytext);
                 intent.putExtra("Education",educationtext);
 
+
+
+                    Toast.makeText(MainActivity.this,"Successfully submitted!!",Toast.LENGTH_LONG).show();
+
+
                 startActivity(intent);
 
 
@@ -50,4 +56,5 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
 }
