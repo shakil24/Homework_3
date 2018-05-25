@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pur_back"
+    tools:context="com.example.shakil.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Sign up"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_below="@+id/signup"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:padding="4dp"
+        android:id="@+id/nametext" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="335dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/nametext"
+        android:layout_alignStart="@+id/nametext"
+        android:layout_below="@+id/nametext"
+        android:background="#fff"
+        android:hint="Type your Name"
+        android:padding="8dp"
+        android:textSize="18dp"
+        style=""/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_below="@+id/name"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:padding="4dp"
+        android:id="@+id/emailtext" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="335dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/emailtext"
+        android:layout_alignStart="@+id/emailtext"
+        android:layout_below="@+id/emailtext"
+        android:background="#fff"
+        android:hint="Type your Email"
+        android:padding="4dp"
+        android:textSize="18dp" />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:layout_below="@+id/email"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:padding="4dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:id="@+id/agetext"
+        />
+
+    <TextView
+        android:id="@+id/countrytext"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/agetext"
+        android:layout_alignBottom="@+id/agetext"
+        android:layout_alignLeft="@+id/country"
+        android:layout_alignStart="@+id/country"
+        android:padding="4dp"
+        android:text="Country"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="145dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/agetext"
+        android:layout_alignStart="@+id/agetext"
+        android:layout_below="@+id/countrytext"
+        android:background="#fff"
+        android:hint="Age"
+        android:inputType="number"
+        android:textSize="18dp"
+        android:id="@+id/age"/>
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="145dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/email"
+        android:layout_alignRight="@+id/email"
+        android:layout_below="@+id/countrytext"
+        android:background="#fff"
+        android:hint="country"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Education"
+        android:layout_below="@+id/age"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:id="@+id/educationtext"/>
+
+    <EditText
+        android:layout_width="335dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/educationtext"
+        android:layout_alignStart="@+id/educationtext"
+        android:layout_below="@+id/educationtext"
+        android:background="#ffffff"
+        android:id="@+id/education"
+        android:hint="Education"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/education"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:background="#5a0a8f"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+
+
+
+</RelativeLayout>
